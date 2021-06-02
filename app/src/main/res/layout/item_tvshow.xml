@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/grid_padding">
+
+    <ImageView
+        android:id="@+id/iv_wide_tvshow_poster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/poster"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_loading_backdrop" />
+
+    <View
+        android:id="@+id/v_tvshow_back_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wide_tvshow_poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_wide_tvshow_name" />
+
+    <TextView
+        android:id="@+id/tv_wide_tvshow_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/genre"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/v_tvshow_back_shadow" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="tv_wide_tvshow_name"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <TextView
+        android:id="@+id/tv_wide_tvshow_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/name_tvshow"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_wide_tvshow_genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_wide_tvshow_genre" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#92000000"
+        app:layout_constraintEnd_toEndOf="@+id/iv_wide_tvshow_poster"
+        app:layout_constraintTop_toTopOf="@+id/iv_wide_tvshow_poster" />
+
+    <ImageView
+        android:id="@+id/iv_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/popularity"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/ic_popularity" />
+
+    <TextView
+        android:id="@+id/tv_list_tvshow_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/popularity"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_popularity"
+        app:layout_constraintStart_toEndOf="@+id/iv_popularity"
+        app:layout_constraintTop_toTopOf="@+id/iv_popularity" />
+
+    <ImageView
+        android:id="@+id/iv_vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/vote_count"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/iv_popularity"
+        app:srcCompat="@drawable/ic_vote" />
+
+    <TextView
+        android:id="@+id/tv_list_tvshow_vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/vote_count"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_vote_count"
+        app:layout_constraintStart_toEndOf="@+id/iv_vote_count"
+        app:layout_constraintTop_toTopOf="@+id/iv_vote_count" />
+
+    <TextView
+        android:id="@+id/tv_list_tvshow_firstairdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/first_air_date"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tv_wide_tvshow_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/first_air_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="40dp"
+                android:src="@drawable/logo_gallery" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <!--JUDUL APPS-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_judul" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_judul" />
+                </TableRow>
+
+                <!--TUGAS-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_tugas" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_tugas" />
+                </TableRow>
+
+                <!--KELAS-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_kelas" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_kelas" />
+                </TableRow>
+
+                <!--MITRA-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_mitra" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_mitra" />
+                </TableRow>
+
+                <!--NAMA-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_nama" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_nama" />
+                </TableRow>
+
+                <!--ASAL-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_asal" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_asal" />
+                </TableRow>
+
+                <!--EMAIL-->
+                <TableRow style="@style/trAbout">
+
+                    <TextView
+                        android:theme="@style/trLabel"
+                        android:text="@string/lbl_about_email" />
+
+                    <TextView
+                        android:theme="@style/trData"
+                        android:text="@string/about_email" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Tahun"
+                android:textSize="@dimen/tahun_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

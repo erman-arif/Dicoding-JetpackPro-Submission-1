@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Movie Gallery</string>
+
+    <!--ABOUT TRAINING-->
+    <string name="lbl_about_judul">Judul</string>
+    <string name="lbl_about_tugas">Tugas</string>
+    <string name="lbl_about_kelas">Kelas</string>
+    <string name="lbl_about_mitra">Mitra</string>
+
+    <string name="about_judul">Movie Catalogue</string>
+    <string name="about_tugas">Submission 1 : Architecture Component</string>
+    <string name="about_kelas">Android Jetpack Pro</string>
+    <string name="about_mitra">Dicoding</string>
+
+    <!--PERSONAL INFO-->
+    <string name="lbl_about_nama">Nama</string>
+    <string name="lbl_about_asal">Asal</string>
+    <string name="lbl_about_email">Email</string>
+    <string name="lbl_about_photo">Foto</string>
+
+    <string name="about_nama">Erman Arif</string>
+    <string name="about_asal">Pangkalpinang, Bangka</string>
+    <string name="about_email">mr.erman.arif@gmail.com</string>
+    <string name="about_photo">Author Photo</string>
+
+    <!--TAB TITLES-->
+    <string name="movie">Movies</string>
+    <string name="tvshow">TV Shows</string>
+
+    <string name="title_movie">Movie Title</string>
+    <string name="name_tvshow">TV Show Title</string>
+    <string name="genre">Genre</string>
+    <string name="release_date">Release Date</string>
+    <string name="first_air_date">First Air Date</string>
+    <string name="popularity">Popularity</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="backdrop">Backdrop</string>
+    <string name="poster">Poster</string>
+    <string name="overview">Overview</string>
+    <string name="Tahun">2021</string>
+</resources>
